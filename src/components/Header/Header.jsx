@@ -54,7 +54,7 @@ const Header = () => {
                     width={256}
                     height={71}
                     quality={100}
-                    src={"/header/logo.webp"}
+                    src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/logo.webp"}
                     alt="logo"
                   />
                 ) : (
@@ -63,7 +63,7 @@ const Header = () => {
                     width={256}
                     height={71}
                     quality={100}
-                    src={"/header/logo.png"}
+                    src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/logo.png"}
                     alt="logo"
                   />
                 )}
@@ -91,7 +91,7 @@ const Header = () => {
                     width={80}
                     height={25}
                     quality={100}
-                    src={"/header/google-logo-new.webp"}
+                    src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/google-logo-new.webp"}
                     alt="google logo"
                   />
                 </div>

@@ -17,7 +17,7 @@ const About = () => {
                 className="m-auto"
                 width={50}
                 height={50}
-                src={"/portfolio.png"}
+                src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/portfolio.png"}
                 alt="portfolio"
               />
             </div>
@@ -35,7 +35,7 @@ const About = () => {
                 className="m-auto"
                 width={50}
                 height={50}
-                src={"/projects.png"}
+                src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/projects.png"}
                 alt="projects"
               />
             </div>
@@ -53,7 +53,7 @@ const About = () => {
                 className="m-auto"
                 width={50}
                 height={50}
-                src={"/people.png"}
+                src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/people.png"}
                 alt="people"
               />
             </div>
@@ -90,7 +90,7 @@ const About = () => {
                   className="w-full"
                   width={400}
                   height={500}
-                  src={"/aboutLeft.jpg"}
+                  src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/aboutLeft.jpg"}
                   alt="about"
                 />
               </div>

@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden bg-black/30 md:pb-10 pt-[50px] ">
       <video
-        src={"/banner/banner-video.mp4"}
+        src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/banner-video.mp4"}
         height={"400px"}
         autoPlay
         loop
@@ -106,7 +106,7 @@ const Hero = () => {
           width={1000}
           height={200}
           className=" absolute w-full  object-cover z-[2] bottom-0 h-[30px]  md:h-[95px]"
-          src={"/banner/bg-wave.svg"}
+          src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/bg-wave.svg"}
           alt="bg-wave"
         />
       </div>
