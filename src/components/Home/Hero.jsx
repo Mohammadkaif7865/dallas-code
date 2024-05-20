@@ -5,23 +5,23 @@ import HeroForm from "./HeroForm";
 const Hero = () => {
   const images = [
     {
-      img: "/banner/logo/best-website-deigning-ana-development-company-in-india.svg",
+      img: "https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/logo/best-website-deigning-ana-development-company-in-india.svg",
       alt: "best-website-deigning-ana-development-company-in-dallas.svg",
     },
     {
-      img: "/banner/logo/best-design-comapnies-in-india.svg",
+      img: "https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/logo/best-design-comapnies-in-india.svg",
       alt: "best-design-comapnies-in-dallas.svg",
     },
     {
-      img: "/banner/logo/facebook-reviews.svg",
+      img: "https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/logo/facebook-reviews.svg",
       alt: "facebook-reviews.svg",
     },
     {
-      img: "/banner/logo/search-engine-optimization-firm-in-delhi.svg",
+      img: "https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/logo/search-engine-optimization-firm-in-delhi.svg",
       alt: "search-engine-optimization-firm-in-dallas.svg",
     },
     {
-      img: "/banner/logo/top-advertising-and-marketing-company (1).png",
+      img: "https://www.sibinfotech.com/digital-marketing-services-in-dallas/banner/logo/top-advertising-and-marketing-company (1).png",
       alt: "/top-advertising-and-marketing-company ",
     },
   ];
