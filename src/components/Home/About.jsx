@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="lg:hidden w-[90%] mx-auto">
         <HeroForm oneline={true} />
       </div>
@@ -67,13 +67,13 @@ const About = () => {
         </div>
         <div className="lg:w-[70%]">
           <div className="">
-            <Link
+            <a
                target="_blank"
               href={"https://www.sibinfotech.com/about-us"}
               className="font-medium bg-[#d7e4fd] p-[5px_10px] rounded text-[14px] font-poppins"
             >
               About SIB Infotech
-            </Link>
+            </a>
             <h1 className="text-[27px] md:text-[36px] leading-tight md:leading-[50px] mt-8 font-redhat font-bold">
               Revamp Your Online Presence with the{" "}
               <span className="text-blue-500">

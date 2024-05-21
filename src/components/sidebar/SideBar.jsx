@@ -84,24 +84,24 @@ const SideBar = () => {
           <div className="">
             {links.map((value, i) => {
               return (
-                <Link
+                <a
                   className="block p-[8px_10px] text-[14px] font-bold font-redhat"
                   key={i}
                   href={value.url}
                 >
                   {value.linkName}
-                </Link>
+                </a>
               );
             })}
           </div>
           <div className="font-redhat flex flex-col  gap-4 mt-8">
-            <Link
+            <a
               href="tel: +1 (315) 666-8001"
               className="flex  text-[20px] items-center gap-2 font-bold text-blue-500 "
             >
               <FaPhoneAlt className="text-2xl" />
               <span> +1 (315) 666-8001</span>
-            </Link>
+            </a>
             <button
               className=" flex justify-center border border-black  hover:border-[#E31A20] hover:text-[#E31A20]  bg-opacity-0  transition-all duration-300  group   rounded text-[18px] font-bold   items-center gap-1 p-[10px_15px]"
               onClick={() => {
@@ -117,7 +117,8 @@ const SideBar = () => {
             <div className="flex items-center gap-6 text-xl mt-6 font-poppins">
               {socialLinks.map((values, i) => {
                 return (
-                  <Link
+                  <a
+                    target="_blank"
                     key={i}
                     className="hover:text-[#e31a20]"
                     href={values.href}
@@ -134,7 +135,7 @@ const SideBar = () => {
                     >
                       {values.icon}
                     </Tooltip>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
@@ -148,7 +149,9 @@ const SideBar = () => {
                 className="m-auto pt-1"
                 width={80}
                 height={100}
-                src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/google-logo-new.webp"}
+                src={
+                  "https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/google-logo-new.webp"
+                }
                 alt="google-logo"
               />
             </div>

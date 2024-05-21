@@ -51,24 +51,24 @@ function Layout({
         <div className="z-[2] sticky bottom-0 lg:hidden grid grid-cols-3  text-white   ">
           <div className="py-3   bg-[#3979F8] text-white tooltip">
             <span className="tooltiptext">Call</span>
-            <Link target="_blank" href={"tel:+1 315 666 8001"}>
+            <a target="_blank" href={"tel:+1 315 666 8001"}>
               <FaPhoneAlt className="text-[25px] mx-auto block " />
-            </Link>
+            </a>
           </div>
           <div className="py-3  bg-[#E31A20] tooltip">
             <span className="tooltiptext">Request a Quote</span>
-            <Link href={"#contact"}>
+            <a href={"#contact"}>
               <IoIosPaperPlane className="text-3xl mx-auto block " />
-            </Link>
+            </a>
           </div>
           <div className="py-3  bg-[#55cd6c] tooltip">
             <span className="tooltiptext">Whatsapp</span>
-            <Link
+            <a
               target="_blank"
               href={"https://api.whatsapp.com/send?phone=918850525860&text=Hi"}
             >
               <IoLogoWhatsapp className="text-3xl mx-auto block " />
-            </Link>
+            </a>
           </div>
         </div>
 

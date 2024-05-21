@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -47,14 +46,19 @@ const Header = () => {
                   onClick={openSideBar}
                 />
               </div>
-              <div className="max-md:w-[190px]">
+              <a
+                href="https://www.sibinfotech.com"
+                className="max-md:w-[190px]"
+              >
                 {isSticky ? (
                   <img
                     className=""
                     width={256}
                     height={71}
                     quality={100}
-                    src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/logo.webp"}
+                    src={
+                      "https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/logo.webp"
+                    }
                     alt="logo"
                   />
                 ) : (
@@ -63,11 +67,13 @@ const Header = () => {
                     width={256}
                     height={71}
                     quality={100}
-                    src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/logo.png"}
+                    src={
+                      "https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/logo.png"
+                    }
                     alt="logo"
                   />
                 )}
-              </div>
+              </a>
             </div>
             <div className="max-lg:hidden flex gap-12 items-center">
               <div className="uppercase font-redhat text-[18px] p-[4px]  font-bold bg-[#3979f8]">
@@ -91,14 +97,16 @@ const Header = () => {
                     width={80}
                     height={25}
                     quality={100}
-                    src={"https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/google-logo-new.webp"}
+                    src={
+                      "https://www.sibinfotech.com/digital-marketing-services-in-dallas/header/google-logo-new.webp"
+                    }
                     alt="google logo"
                   />
                 </div>
               </div>
             </div>
             <div className=" max-lg:hidden font-redhat flex items-center gap-4 text-white ">
-              <Link
+              <a
                 href="tel:+1 (315) 666-8001"
                 className={`flex  text-[20px] items-center gap-2 font-bold hover:text-blue-500  ${
                   isSticky ? "text- z-[20] text-[#E31A20]" : "text-white"
@@ -106,7 +114,7 @@ const Header = () => {
               >
                 <FaPhoneAlt className="text-2xl" />
                 <span>+1 (315) 666-8001</span>
-              </Link>
+              </a>
               <button
                 className={`uppercase  bg-opacity-0  font-redhat transition-all duration-300  group  border rounded-[10px] text-[16px] font-bold flex  items-center gap-1 p-[10px_15px] ${
                   isSticky
@@ -125,14 +133,15 @@ const Header = () => {
 
             <div className="lg:hidden">
               <div className="flex items-center gap-3  ">
-                <Link
+                <a
+                target="_blank"
                   href="mailto:contact@sibinfotech.com"
                   className={` relative z-[1]   ${
                     isSticky ? "text-[#E31A20] " : " text-[#3979f8]  "
                   }`}
                 >
                   <IoMdMail className="text-2xl md:text-3xl   cursor-pointer" />
-                </Link>
+                </a>
                 <IoMenu
                   className={`text-2xl md:text-3xl  cursor-pointer  ${
                     isSticky ? "text-[#222] " : " text-white  "
