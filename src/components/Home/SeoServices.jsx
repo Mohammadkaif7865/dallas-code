@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import React, { useEffect, useState } from "react";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { v4 as uuidv4 } from "uuid";
@@ -86,7 +86,7 @@ const SeoServices = () => {
     <>
       <div id="services" className=" py-20 text-white">
         <div className="w-[90%] mx-auto">
-          <Link
+          <a
             target="_blank"
             href={
               "https://www.sibinfotech.com/search-engine-optimization-seo-services"
@@ -94,7 +94,7 @@ const SeoServices = () => {
             className="p-[5px_10px] rounded bg-[#d7e4fd] font-medium font-poppins  text-black"
           >
             SEO Services
-          </Link>
+          </a>
           <div className="flex max-lg:flex-col lg:justify-between lg:items-center mt-8">
             <h2 className="font-bold font-redhat text-[27px] md:text-4xl">
               Begin Your SEO Journey With Best SEO Company in{" "}
