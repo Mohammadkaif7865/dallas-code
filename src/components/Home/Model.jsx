@@ -110,6 +110,7 @@ const Model = ({ isModalOpen, setIsModalOpen }) => {
                 type="text"
                 name="name"
                 id={"name3"}
+                inputMode="text"
                 required
                 value={formData.name}
                 onChange={handleChange}
@@ -128,6 +129,7 @@ const Model = ({ isModalOpen, setIsModalOpen }) => {
                 type="text"
                 name="companyName"
                 id={"companyname3"}
+                inputMode="text"
                 value={formData.companyName}
                 onChange={handleChange}
                 required
@@ -145,6 +147,7 @@ const Model = ({ isModalOpen, setIsModalOpen }) => {
                 type="text"
                 name="websiteUrl"
                 id={"webUrl"}
+                inputMode="url"
                 value={formData.websiteUrl}
                 onChange={handleChange}
                 required
@@ -162,6 +165,7 @@ const Model = ({ isModalOpen, setIsModalOpen }) => {
                 type="email"
                 name="email"
                 id={"email3"}
+                inputMode="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -180,6 +184,7 @@ const Model = ({ isModalOpen, setIsModalOpen }) => {
                 type="tel"
                 name="phoneNo"
                 id={"phoneNo3"}
+                  inputMode="tel"
                 value={formData.phoneNo}
                 onChange={handleChange}
                 required
