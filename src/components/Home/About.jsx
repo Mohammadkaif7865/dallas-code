@@ -74,7 +74,7 @@ const About = () => {
             >
               About SIB Infotech
             </a>
-            <h3 className="text-[27px] md:text-[36px] leading-tight md:leading-[50px] mt-8 font-redhat font-bold">
+            <h3 className="text-[27px]  md:text-[36px] leading-tight md:leading-[50px] mt-8 font-redhat font-bold">
               Revamp Your Online Presence with the{" "}
               <span className="text-blue-500">
                 Best Digital Marketing Agency

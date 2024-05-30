@@ -51,7 +51,7 @@ function Layout({
         <div className="z-[2] sticky bottom-0 lg:hidden grid grid-cols-3  text-white   ">
           <div className="py-3   bg-[#3979F8] text-white tooltip">
             <span className="tooltiptext">Call</span>
-            <a target="_blank" href={"tel:+1 315 666 8001"}>
+            <a target="_blank" href={"tel:+1 (315) 666-8001"}>
               <FaPhoneAlt className="text-[25px] mx-auto block " />
             </a>
           </div>
