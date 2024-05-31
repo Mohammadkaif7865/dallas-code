@@ -9,7 +9,7 @@ import { IoIosPaperPlane } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import Model from "../Home/Model";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import { closeSideBar, handleOverlay } from "../sidebar/fuction";
+import { closeSideBar } from "../sidebar/fuction";
 // import Header from "../Header";
 // import Footer from "../Footer";
 
