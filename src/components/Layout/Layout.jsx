@@ -9,6 +9,7 @@ import { IoIosPaperPlane } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import Model from "../Home/Model";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { closeSideBar, handleOverlay } from "../sidebar/fuction";
 // import Header from "../Header";
 // import Footer from "../Footer";
 
@@ -38,6 +39,13 @@ function Layout({
           {children}
           <SideBar />
         </main>
+        <div
+          id="laypuotoverlay"
+          className="overlay hidden  fixed top-0 left-0 bottom-0 right-0  bg-black/60  z-[99]"
+          onClick={() => {
+            closeSideBar();
+          }}
+        ></div>
         <Model isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
         {/* <Link
         href={"https://api.whatsapp.com/send?phone=918850525860&text=Hi"}

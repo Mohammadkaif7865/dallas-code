@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -67,12 +67,16 @@ const SideBar = () => {
     },
   ];
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    closeSideBar();
+  }, [location]);
 
   return (
     <>
       <div
         id="sidebar"
-        className={` transition-all duration-300 fixed top-0 left-[-100%] bg-white  p-8 min-h-screen max-md:w-full w-[355px] z-[99]`}
+        className={` transition-all duration-300 fixed top-0 left-[-100%] bg-white  p-8 min-h-screen max-md:w-full w-[355px] z-[100]`}
       >
         <div>
           <IoCloseSharp
