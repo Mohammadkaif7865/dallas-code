@@ -11,8 +11,4 @@ export const closeSideBar = () => {
   document.querySelector("#laypuotoverlay").classList.add("hidden");
 };
 
-export const handleOverlay = (e, closeSideBar) => {
-  if (e.target.id === "laypuotoverlay") {
-    closeSideBar();
-  }
-};
+
