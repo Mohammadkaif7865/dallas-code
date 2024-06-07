@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import Services from "./Services";
 import "./heroform.css";
+import { message } from "antd";
 
 const HeroForm = ({ oneline }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+ 
   const option = [
+    "Website Design",
     "Website Design",
     "Website Development",
     "Digital Marketing",
@@ -28,7 +26,8 @@ const HeroForm = ({ oneline }) => {
     companyName: "",
     websiteUrl: "",
     service: "",
-    fromWhere: "dallas",
+    message: "",
+    fromWhere: "DMS - Dallas",
   });
 
   const handleChange = (e) => {
@@ -48,42 +47,45 @@ const HeroForm = ({ oneline }) => {
       website: formData.websiteUrl,
       phone: formData.phoneNo,
       service: formData.service,
+      message: formData.message,
       fromWhere: formData.fromWhere,
     };
 
     console.log(data);
 
-    // try {
-    //   const API_TOKEN = "FgRCHG4OVv8Z1BcrjExKJcqspvTsUTCe";
-    //   const url = "https://www.sibinfotech.com/api/send-email";
-    //   const response = await fetch(url, {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //       Authorization: API_TOKEN,
-    //     },
-    //     body: JSON.stringify(data),
-    //   });
+    try {
+      const API_TOKEN = "FgRCHG4OVv8Z1BcrjExKJcqspvTsUTCe";
+      const url = "https://www.sibinfotech.com/api/send-email";
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: API_TOKEN,
+        },
+        body: JSON.stringify(data),
+      });
 
-    //   if (response.status === 200) {
-    //     toast.success("Email Sent Successfully!");
-    //     setFormData({
-    //       name: "",
-    //       companyName: "",
-    //       websiteUrl: "",
-    //       email: "",
-    //       phoneNo: "",
-    //     });
+      if (response.status === 200) {
+        toast.success("Email Sent Successfully!");
+        setFormData({
+          name: "",
+          phoneNo: "",
+          email: "",
+          companyName: "",
+          websiteUrl: "",
+          service: "",
+          message: "",
+        });
 
-    //     setTimeout(() => {
-    //       window.location.href = "https://sibinfotech.com/thanks";
-    //     }, 2000);
-    //   } else {
-    //     toast.error("Something went wrong!");
-    //   }
-    // } catch (error) {
-    //   console.error("Error:", error);
-    // }
+        setTimeout(() => {
+          window.location.href = "https://sibinfotech.com/thanks";
+        }, 2000);
+      } else {
+        toast.error("Something went wrong!");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -164,38 +166,6 @@ const HeroForm = ({ oneline }) => {
               </label>
             </div>
           </div>
-          {/* <div className={`grid   ${oneline ? "" : "grid-cols-2 gap-4 "}`}>
-            <div class="user-box mt-[23px] ">
-              <input
-                className=""
-                type="url"
-                name="websiteUrl"
-                value={formData.websiteUrl}
-                onChange={handleChange}
-                required
-                inputMode="url"
-              />
-              <label htmlFor="websiteUrl" className="">
-                Website Url
-              </label>
-            </div>
-            <div class="user-box mt-[23px] ">
-              <input
-                className=""
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                // Keyboard type for email
-                inputMode="email"
-              />
-              <label htmlFor="email" className="">
-                Email
-              </label>
-              
-            </div>
-          </div> */}
 
           <div className={`grid   ${oneline ? "" : "grid-cols-2 gap-4 "}`}>
             <div class="user-box mt-[23px] ">
@@ -231,15 +201,14 @@ const HeroForm = ({ oneline }) => {
               </select>
             </div>
           </div>
-          <div class="relative mb-2 mt-[22px]">
-            {/* <label for="message" class="leading-7 text-sm text-gray-600">
-              Message
-            </label> */}
+          <div className="relative mb-2 mt-[22px]">
             <textarea
               id="message"
               name="message"
               placeholder="Message"
-              class="w-full bg-white text-sm rounded border  border-[#9b9b9b] focus:border-blue-500   h-16 outline-none text-[#9b9b9b] py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder:text-[#9b9b9b]"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full bg-white text-sm rounded border  border-[#9b9b9b] focus:border-blue-500   h-16 outline-none text-[#9b9b9b] py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder:text-[#9b9b9b]"
             ></textarea>
           </div>
 
